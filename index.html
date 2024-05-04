@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>Ejercicio 1</title>
 </head>
 <body>
-    <script src="index.js"></script>
+    <div class="calcu">
+        <h1>Calculadora</h1>
+        <form action="formulario" method="dialog">
+            
+            <input type="text" id="op1" name="operador1" class="op1" placeholder="Operador1"><br>
+            
+            <input type="text" id="parametro" name="parametro" class="parametro"  placeholder="parametro"><br>
+            
+            <input id="text" id="op2" name="operador2" class="op2" placeholder="Operador2"></input><br>
+            
+            <input type="submit" id="calcular"   class="sub"><br>
+          
+            <p id="resultado"></p>
+        </form>
+    </form>
+    </div>
+    
+    <script src="index.js" defer></script>
 </body>
 </html>

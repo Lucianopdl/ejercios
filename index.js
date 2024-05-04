@@ -1,22 +1,40 @@
+const txtOp1= document.getElementById("op1");
+const txtOp2= document.getElementById("op2");
+const parametro= document.getElementById("parametro");
+const btnCalcular= document.getElementById("calcular")
+const pResultado= document.getElementById("resultado");
 
-function ejercicioUno(a=0,b=0,operacion="suma"){
-switch(operacion){
-    case "suma":
-        return console.log(a+b);
+
+btnCalcular.addEventListener('click', calcular)
+
+function ejercicioUno(){
+    const parametro= parametro.value
+    const txtOp1= parseFloat(txtOp1.value)
+    const txtOp2= parseFloat(txtOp2.value)
+
+    if((parametro =="+" || parametro =="-" || parametro=="/" || parametro=="*"))
+        let resultado:
+        switch(_parametro){
+            case "+":
+                Resultado=op1 + op2
+                
+            case "-":
+                Resultado=op1 - op2
+                
+            case "/":
+                Resultado=op1 / op2
+                
+            case "*":
+                Resultado=op1 * op2
+                 
+         }
+        pResultado.innerText= "=" + "resultado"
+    } else{
+        pResultado.innerText="calculo imposible"
+    }
         
-    case "resta":
-        return console.log(a-b);
-        
-    case "division":
-        return console.log(a/b);
-        
-    case "multiplicacion":
-        return console.log(a*b);
-        
-    default:
-        console.error ("La operacion $(operacion)no es valida")  
-}
-} 
-ejercicioUno(2,2,"suma")
+
+
+
 
 
