@@ -6,33 +6,33 @@ const pResultado= document.getElementById("resultado");
 
 
 btnCalcular.addEventListener('click', calcular)
+function ejercicioUno() {
+    const parametro = document.getElementById("parametro").value;
+    const txtOp1 = parseFloat(document.getElementById("txtOp1").value);
+    const txtOp2 = parseFloat(document.getElementById("txtOp2").value);
 
-function ejercicioUno(){
-    const parametro= parametro.value
-    const txtOp1= parseFloat(txtOp1.value)
-    const txtOp2= parseFloat(txtOp2.value)
-
-    if((parametro =="+" || parametro =="-" || parametro=="/" || parametro=="*"))
-        let resultado:
-        switch(_parametro){
+    if (parametro === "+" || parametro === "-" || parametro === "/" || parametro === "*") {
+        let resultado;
+        switch (parametro) {
             case "+":
-                Resultado=op1 + op2
-                
+                resultado = txtOp1 + txtOp2;
+                break;
             case "-":
-                Resultado=op1 - op2
-                
+                resultado = txtOp1 - txtOp2;
+                break;
             case "/":
-                Resultado=op1 / op2
-                
+                resultado = txtOp1 / txtOp2;
+                break;
             case "*":
-                Resultado=op1 * op2
-                 
-         }
-        pResultado.innerText= "=" + "resultado"
-    } else{
-        pResultado.innerText="calculo imposible"
+                resultado = txtOp1 * txtOp2;
+                break;
+        }
+        document.getElementById("pResultado").innerText = "=" + resultado;
+    } else {
+        document.getElementById("pResultado").innerText = "cálculo imposible";
     }
-        
+}
+
 
 
 
